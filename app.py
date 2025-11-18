@@ -63,6 +63,7 @@ TEMPLATE = """
 </style>
 <div class="content-wrapper">
     <h1>Civicscape Chatbot (Beta)</h1>
+    <p class="editable-notice">NOTE: Responses can take up to a minute while agent is thinking. This ensures better quality output.</p>
     <form method="post" action="{{ url_for('update_history') }}">
         {% for entry in history %}
             <textarea name="history_{{ loop.index0 }}" rows="2">{{ entry }}</textarea>
