@@ -77,7 +77,7 @@ TEMPLATE = """
     </form>
     <hr>
     <form method="post" action="{{ url_for('chat') }}">
-        <input type="text" name="user_input" autofocus placeholder="Type "help" for guidance">
+        <input type="text" name="user_input" autofocus placeholder="Create an activity or type 'help' for guidance">
         <button type="submit">Run New Prompt</button>
         <a href="{{ url_for('download_history') }}"><button type="button">Download History</button></a>
     </form>
